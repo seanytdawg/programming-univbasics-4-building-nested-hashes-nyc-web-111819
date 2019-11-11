@@ -1,5 +1,5 @@
 def base_hash
-  Hash.new 
+  hash = {} 
 end
 
 def monopoly_with_second_tier
@@ -14,8 +14,7 @@ def monopoly_with_third_tier
   :railroads=>
   {
     :pieces=>4,
-    :rent_in_dollars=>
-    {},
+    :rent_in_dollars=>{} },
     :names=>
     {
       :reading_railroad=>
@@ -25,11 +24,8 @@ def monopoly_with_third_tier
       :b_and_o_railroad=>
       {},
       :shortline=>
-      {
-        "mortgage_value"=>"$800"
-      }
+      {}
     }
-  }
 }
 
 def monopoly_with_fourth_tier
